@@ -3656,6 +3656,9 @@ int tc_filesystem_main(int argc, char *argv[])
 #ifdef CONFIG_TC_FS_PROCFS
 	tc_fs_procfs_main();
 #endif
+#ifdef CONFIG_TC_FS_MOPS
+	tc_fs_mops_main();
+#endif
 #if defined(CONFIG_MTD_CONFIG)
 	tc_driver_mtd_config_ops();
 #endif
